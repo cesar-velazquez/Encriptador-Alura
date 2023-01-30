@@ -1,0 +1,177 @@
+*{
+    background: #d1deff;
+    font-family: 'Inter';
+font-weight: 400;
+font-size: 32px;
+line-height: 150%;
+}
+.social{
+	text-align: center;
+	
+}
+
+.redes{
+	width: 40px;
+	height: 40px;
+	
+}
+
+.logo{
+    padding-top: 10px;
+    margin-left: 10px;
+    width: auto;
+}
+.titulo{
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-align: center;    
+    margin-bottom: 10px;
+}
+main{
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 80px;    
+}
+
+.text-area-mensaje{
+    border: none;
+    color: #2e31f5;
+    border-radius: 24px;
+    text-transform: lowercase;  
+    border: rgb(255, 255, 255) 8px inset;  
+    margin-left: 200px;
+}
+::placeholder{color: #2e31f5;}
+.text-area-mensaje :focus{
+    outline: none;
+}
+
+.informacion{
+    margin-top: 1px;
+    margin-left: 18px;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 200px;
+}
+
+.textarea-desencriptar{
+    margin-left: 100px;
+    background: #f0cfc1;
+    background-image: url("img/Muñeco.png");
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 24px;
+    color: #0c0c0c;    
+    padding-left: 20px;
+    border: rgb(233, 233, 247) 8px outset;    
+}
+.textarea-desencriptar:focus{
+    outline: none;
+}
+
+.botones{
+    display: flex;
+    margin-top: 18px;    
+    margin-left: 200px;    
+}
+
+.btn-encriptar, .btn-desencriptar, .copiar{
+    font-size: 30px;
+    font-family: cursive
+}
+
+.btn-encriptar{
+ background-color: #0206e7;
+ border: 1px solid #eff2f5;
+ border-radius: 24px;
+ color: #d1deff;
+ cursor: pointer;
+ height: 67px;
+ width: auto;
+}
+
+.btn-desencriptar{
+    background-color: #c7d8ec;
+    border: 1px solid #ca0c0c;
+    border-radius: 24px;
+    color: #0d0d0e;    
+    cursor: pointer;
+    height: 67px;
+    width: auto;
+    margin-left: 30px;
+}
+.copiar{
+    background-color: #e0c7bb;
+    border: 1px solid #c54e17;
+    border-radius: 24px;
+    color: #141518;
+    cursor: pointer;
+    height: 50px;    
+    margin-left: 18px;
+    margin-top: 12px;
+    position: absolute;
+    width: auto;    
+    margin-left: 120px;
+}
+
+
+/*AQUÍ INICIAN LOS MEDIA QUERY'S
+.text-area-mensaje, .informacion, .textarea-desencriptar, .botones
+.btn-encriptar, .btn-desencriptar, .copiar
+*/
+@media screen and (max-width: 480px) {      
+.logo, .btn-encriptar, .btn-desencriptar{
+    width: auto;
+}
+.textarea-desencriptar{
+    margin-left: 200px;
+}
+.titulo{    
+    margin-left: 320px;
+    font-size: 30px;
+}
+
+}
+
+
+@media screen and (max-width:740px){
+    .logo, .btn-encriptar, .btn-desencriptar, .copiar {
+        width: auto;
+    }
+    .textarea-desencriptar{
+        margin-left: 200px;
+    }
+    .titulo{
+    margin-left: 320px;
+    font-size: 30px;
+    }
+}
+
+
+
+@media screen and (max-width: 960px){
+    .logo, .btn-encriptar, .btn-desencriptar, .copiar {
+        width: auto;
+    }
+    .textarea-desencriptar{
+        margin-left: 200px;
+    }
+    .titulo{
+        margin-left: 320px;
+        font-size: 30px;
+        }
+}
+
+@media screen and (max-width: 1168px){
+    .logo, .btn-encriptar, .btn-desencriptar, .copiar {
+        width: auto;
+    }  
+    .textarea-desencriptar{
+        margin-left: 200px;
+    }
+    .titulo{
+        margin-left: 320px;
+        font-size: 30px;
+        }
+}

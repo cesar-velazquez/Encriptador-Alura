@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <title>Encriptador Alura</title>    
+     <div class="social">
+        <a href="https://www.facebook.com/cesar.velazquezortiz.1/"><img src="img/facebook.png" alt="Facebook" class="redes"></a>
+        <a href="https://github.com/cesar-velazquez"><img src="img/github.png" alt="Git Hub" class="redes"></a>
+        <a href="https://www.linkedin.com/in/c%C3%A9sar-velazquez-722a9121b/"><img src="img/linkedin.png" alt="Linkedin" class="redes"></a>              
+    </div>
+</head>
+<body>
+    <header>
+        <img class="logo" src="img/Logo.png" alt="Logo de Alura">
+    </header>
+    <h1 class="titulo">Encriptador De Alura</h1>
+    <main>        
+    <section>
+
+        <form action="" name="validationForm" id="validationForm">
+            <label forHTML="letras"></label>
+            <br>
+            <textarea id="letras" class="text-area-mensaje" name="letras" cols="20" rows="10" onkeyup="validar()" onblur="validar()" placeholder="Ingresa un texto..."></textarea>                            
+            <textarea class="textarea-desencriptar" name="" id="" cols="20" rows="10"></textarea>
+            <div id="message" style="position: absolute; right: 0px; top: 0px; background-color: rgb(219, 219, 129); z-index: 10" hidden>
+                Introduzca solo letras minúsulas(a-z).
+              </div>
+              <br><br>
+        </form>
+
+        <!-- <textarea class="text-area-mensaje" name="" id="" cols="20" rows="10" onkeyup="this.value=NumText(this.value)" placeholder="Ingresa un texto..."></textarea>                         -->
+        <!-- <textarea class="textarea-desencriptar" name="" id="" cols="20" rows="10"></textarea> -->
+    
+        <div>
+            <h6 class="informacion">Ingresa solo letras minúsculas y sin acentos</h6>
+        </div>    
+        <div class="botones">
+            <button class="btn-encriptar" onclick="verificar()" onclick="btnEncriptar()">Encriptar</button>
+            <button class="btn-desencriptar" onclick=" btnDesencriptar()">Desencriptar</button>
+            <div><button class="copiar" onclick="copiar()">Copiar Texto</button></div>
+        </div>    
+    </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
